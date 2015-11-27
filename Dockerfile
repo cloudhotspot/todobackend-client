@@ -18,7 +18,7 @@ WORKDIR /app
 
 # Install application dependencies
 RUN npm install -g grunt-cli && \
-    npm install
+    npm install --unsafe-perm=true
 
 # Set entrypoint
 CMD ["node","app.js"]
